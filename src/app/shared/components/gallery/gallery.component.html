@@ -1,0 +1,13 @@
+<div class="gallery" *ngFor="let item of list">
+  <div class="pr">
+    <h3>{{item.name}}</h3>
+    <h2>{{item.price}}</h2>
+    <p>{{item.description}}</p>
+    <img src="{{item.image}}" alt="">
+    <p>{{item.stars}}<p>
+    <div class="c-grid--buttons">
+      <button class="button" (click)="edit(item.id)">Editar</button><button (click)="delete(item.id)">Eliminar</button>
+    </div>
+  </div>
+
+</div>

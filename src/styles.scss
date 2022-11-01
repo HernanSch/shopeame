@@ -1,1 +1,116 @@
-/* You can add global styles to this file, and also import other style files */
+
+ .header{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+
+  .imageLogo{
+    height: 100px;
+    width: 200px;
+  }
+
+  .menu{
+    display: flex;
+    justify-content:center;
+    margin: 15px 0 0 0;
+    border: 0;
+    padding: 0;
+    background-color: goldenrod;
+
+
+    a{
+      padding: 5px;
+      margin-top: -5%;
+    }
+  }
+}
+
+.gallery{
+  display: flex;
+  margin-bottom: 50px;
+
+  flex-wrap: wrap;
+
+  .pr {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    max-height: 50%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+
+    img {
+      height: 150px;
+      max-width: 150px;
+      margin: 6px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 14px;
+      text-align: center;
+    }
+    button{
+      margin: 10px 0 0 20px;
+      height: 25px;
+      width: 100px;
+      border: 2px solid black;
+      border-radius: 8px;
+      font-size: 20px;
+
+      display: grid;
+      place-content: center;
+    }
+  }
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+
+
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:40px;
+  width:100%;
+
+
+  a{
+    color: white;
+  }
+}
+
+.listForm{
+  margin: 2%;
+  border: 5%;
+  .list{
+    list-style: none;
+
+  }
+  input{
+    display: flex;
+  }
+  button{
+    display: flex;
+    margin-left: 40px;
+  }
+
+}

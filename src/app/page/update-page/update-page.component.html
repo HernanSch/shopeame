@@ -1,0 +1,13 @@
+
+
+<form class="listForm" [formGroup]="newProductForm" (ngSubmit)="onSubmit()">
+
+  <ul class="list">
+    <li><label for="name">Name <input type="text" formControlName="name"></label></li>
+    <li><label for="price">Price <input type="text" formControlName="price"></label></li>
+    <li><label for="description">Description <input type="text" formControlName="description"></label></li>
+    <li><label for="stars">Stars <input type="text" formControlName="stars"></label></li>
+    <li><label for="image">Image URL <input type="text" formControlName="image"></label></li>
+  </ul>
+  <button>Añadir</button>
+</form>
